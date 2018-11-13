@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.noto {
+    font-family: 'Noto Serif KR';
+}
+
+.one {
+    font-weight: 100;
+}
+
+.two {
+    font-weight: 200;
+}
+
+.three {
+    font-weight: 300;
+}
+
+.four {
+    font-weight: 400;
+}
+
+.five {
+    font-weight: 500;
+}
+
+.six {
+    font-weight: 600;
+}
+
+.seven {
+    font-weight: 700;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    padding: 100px;
+    text-align: center;
+}
