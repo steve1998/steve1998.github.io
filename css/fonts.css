@@ -1,0 +1,28 @@
+.opensans-system {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+}
+
+.opensans-title {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.opensans-subtitle {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.opensans-hero {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.opensans-system-big {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}

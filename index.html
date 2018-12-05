@@ -9,87 +9,130 @@
         <title>Nicholas Steven's Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,500,700" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        
         <!-- Icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="css/icons.css">
-
+        
+        <!-- Plugins -->
+        <link href="css/hamburger.css" rel="stylesheet">
+        <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+        
         <!-- Custom CSS -->
         <link href="css/index.css" rel="stylesheet">
-
+        <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/color.css" rel="stylesheet">
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <main>
-            <div class="uk-container">
-                <div>
-                    <br>
-                    <h1 class="uk-heading-hero noto three">Nicholas Steven Darmawan</h1>
-                    <h1 class="uk-primary-hero noto three">Computer Science | UC Davis 2020</h1>
+    <body id="body">
+        <!-- Navbar -->
+        <nav class="navbar bg-teal is-fixed-top opensans-system">
+           <button id="burg" class="hamburger hamburger--slider js-hamburger" type="button" onclick="setActive(this)">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+               <span class="my-menu" id="mymenu">
+                    <span><a href="#home">Home</a></span>
+                    <span><a href="#about">About</a></span>
+                    <span><a href="#skills">Skills</a></span>
+                    <span><a href="#projects">Projects</a></span>
+                    <span><a href="#experiences">Experiences</a></span>
+               </span>
+            </button>
+        </nav>
+        <!-- Upper Hero -->
+        <section id="home" class="hero bg-teal is-fullheight has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="opensans-hero white-text animated slideInDown">Hello there! My name is Nicholas Steven Darmawan 😁 </h1>
+            </div>
+        </div>
+        </section>
+        
+        <!-- About -->
+        <section id="about" class="section opensans-system">
+            <div class="container has-text-centered">
+                <h1 class="opensans-title">About me</h1>
+                <div class="columns">
+                    <div class="column">
+                        <p class="opensans-title">University of California, Davis</p>
+                        <p class="opensans-subtitle">Expected Graduation Date: 2020</p>
+                    </div>
+                    <div class="column">
+                        <p class="opensans-title">Computer Science</p>
+                        <p class="opensans-subtitle">Major</p>
+                    </div>
                 </div>
-                <br>
-                <hr class="uk-divider-icon">
-                <div>
-                    <br>
-                    <article>
-                        <h1 class="uk-article-title noto seven uk-background-muted">About Me</h1>
-                        <p class="uk-article-meta noto three">Hi. My name is Nicholas Steven Darmawan. I am an Indonesian. Currently, I am a computer science student in UC Davis, expected to graduate at 2020. I love to code, as you can tell from my major, and please do check out my GitHub page. I also love to take and edit photos and videos, as well as making music. Anyways, thank you for taking the time to check out this website I make!</p>
-                    </article>
-                </div>
-                <div>
-                    <br>
-                    <article>
-                        <h1 class="uk-article-title right noto seven uk-background-muted">Programming Languages & Development Tools</h1>
-                        <br>
-                        <div class="center uk-column-1-3">
-                            <h1><i class="icons8-javascript-filled"></i></h1>
-                            <h1><i class="icons8-html-5-filled"></i></h1>
-                            <h1><i class="icons8-css3-filled "></i></h1>
-                        </div>
-                        <div class="center uk-column-1-3">
-                                <h1><i class="icons8-python-filled"></i></h1>
-                                <h1><i class="icons8-cpp-filled"></i></h1>
-                                <h1><i class="icons8-c"></i></h1>
-                        </div>
-                        <div class="center uk-column-1-1">
-                            <h1><i class="icons8-git-filled"></i></h1>
-                        </div>
-                        <h1 class="uk-article-title left noto seven uk-background-muted">Other Skills</h1>
-                        <br>
-                        <div class="center uk-column-1-3">
-                            <h1 class="noto three">Music Production</h1>
-                            <h1 class="noto three">Video Editing</h1>
-                            <h1 class="noto three">Photo Editing</h1>
-                        </div>
-                        <div class="center uk-column-1-1">
-                            <h1 class="noto three">Photography</h1>
-                        </div>
-                    </article>
+                <p>I am currently in my Junior year of college at UC Davis. I love coding and web develoment, and am learning how to make more awesome web pages. Kindly check out my GitHub page below. I also have other hobbies such as making music, and editing photos and videos.</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section opensans-system">
+            <div class="container has-text-centered">
+                <h1 class="opensans-title">Skills</h1>
+                <div class="columns has-text-centered">
+                    <div class="column">
+                        <i class="icons8-html5-colored"></i>
+                    </div>
+                    <div class="column">
+                        <i class="icons8-css3-colored"></i>
+                    </div>
+                    <div class="column">
+                        <i class="icons8-javascript-filled"></i>
+                    </div>
+                    <div class="column">
+                        <i class="icons8-cpp-filled"></i>
+                    </div>
+                    <div class="column">
+                        <i class="icons8-python-filled"></i>
+                    </div>
+                    <div class="column">
+                        <i class="icons8-git-colored"></i>    
+                    </div>
                 </div>
             </div>
-            <br>
-        </main>
-        <footer class="uk-background-muted">
-            <div class="uk-align-center">
-                <a href="https://github.com/steve1998" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github; ratio: 2"></a>
-                <a href="https://instagram.com/steve_9_5" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram; ratio: 2"></a>
-                <a href="https://youtube.com/nicholassteven998" class="uk-icon-button uk-margin-small-right" uk-icon="icon: youtube; ratio: 2"></a>
+        </section>
+        
+        <!-- Projects -->
+        <section id="projects" class="section opensans-system">
+            <div class="container has-text-centered">
+                <h1 class="opensans-title">Projects</h1>
+                <div class="column">
+                    <a href="https://github.com/steve1998" target="_blank" rel="noreferrer noopener"><i class="icons8-github-colored"></i></a>
+                </div>
             </div>
-        </footer>       
-
-        <!-- UIkit JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
-        <script src="uikit/dist/js/uikit-icons.min.js"></script>
-
-        <!-- My Scripts -->
-        <script src="" async defer></script>
+        </section>
+        
+        <!-- Experiences -->
+        <section id="experiences" class="section opensans-system">
+            <div class="container has-text-centered">
+                <h1 class="opensans-title">Experiences</h1>
+                <div class="column opensans-system-big">
+                    <p>IT support at College of Engineering at UC Davis</p>
+                    <p>Member of #include at UC Davis</p>
+                    <p>Participated in HackDavis 2018</p>
+                    <p>Member of the Davis Computer Science Club</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer footer-padding has-text-centered">
+            <div class="content">
+                <span class="opensans-system">Made with HTML5, CSS, and &hearts;</span>
+            </div>
+            <div class="content">
+                <span class="opensans-system">&copy; 2018</span>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
