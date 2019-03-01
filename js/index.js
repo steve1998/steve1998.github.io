@@ -17,3 +17,6 @@ function setActive(x) {
         active = false;
     }
 }
+
+$('document').ready(function(){
+});

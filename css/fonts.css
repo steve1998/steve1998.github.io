@@ -1,28 +1,52 @@
-.opensans-system {
-    font-family: 'Open sans', sans-serif;
+.worksans-system {
+    font-family: 'Work sans', sans-serif;
     font-weight: 300;
 }
 
-.opensans-title {
-    font-family: 'Open sans', sans-serif;
-    font-weight: 600;
+.worksans-title {
+    font-family: 'Work sans', sans-serif;
+    font-weight: 700;
     font-size: 2em;
 }
 
-.opensans-subtitle {
-    font-family: 'Open sans', sans-serif;
+.worksans-supertitle {
+    font-family: 'Work sans', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.worksans-nav {
+    font-family: 'Work sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.worksans-subtitle {
+    font-family: 'Work sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
 }
 
-.opensans-hero {
-    font-family: 'Open sans', sans-serif;
+.worksans-hero {
+    font-family: 'Work sans', sans-serif;
     font-weight: 300;
     font-size: 3em;
 }
 
-.opensans-system-big {
-    font-family: 'Open sans', sans-serif;
+.worksans-system-big {
+    font-family: 'Work sans', sans-serif;
     font-weight: 300;
     font-size: 1.5em;
+}
+
+.major-mono {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+.poiret {
+    font-family:  'Poiret one', cursive;
+    font-weight: 400;
+    font-size: 3em;
 }

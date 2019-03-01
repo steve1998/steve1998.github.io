@@ -17,7 +17,10 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,900" rel="stylesheet">
+
         <!-- Icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="css/icons.css">
@@ -25,15 +28,19 @@
         <!-- Plugins -->
         <link href="css/hamburger.css" rel="stylesheet">
         <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+
+        <!-- JQuery UI-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         
         <!-- Custom CSS -->
         <link href="css/index.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="css/color.css" rel="stylesheet">
     </head>
-    <body id="body">
+    <body>
         <!-- Navbar -->
-        <nav class="navbar bg-teal is-fixed-top opensans-system">
+        <nav class="navbar bg is-fixed-top worksans-subtitle" id="nav">
+            <!-- 
            <button id="burg" class="hamburger hamburger--slider js-hamburger" type="button" onclick="setActive(this)">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -45,29 +52,58 @@
                     <span><a href="#projects">Projects</a></span>
                     <span><a href="#experiences">Experiences</a></span>
                </span>
-            </button>
+            </button> -->
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <a class="navbar-item worksans-nav has-text-white" href="#home">// NSD</a>
+                </div>
+            </div>
+            <div class="navbar-menu"></div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable bg" id="dropdown">
+                        <a class="has-text-white navbar-link bg">
+                            Navigation
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="#about">
+                                About
+                            </a>    
+                            <a class="navbar-item" href="#skills">
+                                Skills
+                            </a>
+                            <a class="navbar-item" href="#projects">
+                                Projects
+                            </a>
+                            <a class="navbar-item" href="#experiences">
+                                Experiences
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
         <!-- Upper Hero -->
-        <section id="home" class="hero bg-teal is-fullheight has-text-centered">
+        <section id="home" class="hero bg is-fullheight has-text-centered">
         <div class="hero-body">
             <div class="container">
-                <h1 class="opensans-hero white-text animated slideInDown">Hello there! My name is Nicholas Steven Darmawan 😁 </h1>
+                <h1 class="major-mono white-text animated slideInDown typerwriter-h1">Hello there! My name is Nicholas Steven Darmawan 😁</h1>
             </div>
         </div>
         </section>
-        
+
         <!-- About -->
-        <section id="about" class="section opensans-system">
-            <div class="container has-text-centered">
-                <h1 class="opensans-title">About me</h1>
+        <section id="about" class="section worksans-system scrollme">
+            <br>
+            <div class="container has-text-centered animateme">
+                <h1 class="worksans-supertitle">About me</h1>
                 <div class="columns">
                     <div class="column">
-                        <p class="opensans-title">University of California, Davis</p>
-                        <p class="opensans-subtitle">Expected Graduation Date: 2020</p>
+                        <p class="worksans-title">University of California, Davis</p>
+                        <p class="worksans-subtitle">Expected Graduation Date: 2020</p>
                     </div>
                     <div class="column">
-                        <p class="opensans-title">Computer Science</p>
-                        <p class="opensans-subtitle">Major</p>
+                        <p class="worksans-title">Computer Science</p>
+                        <p class="worksans-subtitle">Major</p>
                     </div>
                 </div>
                 <p>I am currently in my Junior year of college at UC Davis. I love coding and web develoment, and am learning how to make more awesome web pages. Kindly check out my GitHub page below. I also have other hobbies such as making music, and editing photos and videos.</p>
@@ -75,9 +111,10 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="section opensans-system">
+        <section id="skills" class="section worksans-system">
+            <br>
             <div class="container has-text-centered">
-                <h1 class="opensans-title">Skills</h1>
+                <h1 class="worksans-supertitle">Skills</h1>
                 <div class="columns has-text-centered">
                     <div class="column">
                         <i class="icons8-html5-colored"></i>
@@ -102,9 +139,9 @@
         </section>
         
         <!-- Projects -->
-        <section id="projects" class="section opensans-system">
+        <section id="projects" class="section worksans-system">
             <div class="container has-text-centered">
-                <h1 class="opensans-title">Projects</h1>
+                <h1 class="worksans-supertitle">Projects</h1>
                 <div class="column">
                     <a href="https://github.com/steve1998" target="_blank" rel="noreferrer noopener"><i class="icons8-github-colored"></i></a>
                 </div>
@@ -112,10 +149,10 @@
         </section>
         
         <!-- Experiences -->
-        <section id="experiences" class="section opensans-system">
+        <section id="experiences" class="section worksans-system">
             <div class="container has-text-centered">
-                <h1 class="opensans-title">Experiences</h1>
-                <div class="column opensans-system-big">
+                <h1 class="worksans-supertitle">Experiences</h1>
+                <div class="column worksans-system-big">
                     <p>IT support at College of Engineering at UC Davis</p>
                     <p>Member of #include at UC Davis</p>
                     <p>Participated in HackDavis 2018</p>
@@ -126,13 +163,16 @@
         
         <footer class="footer footer-padding has-text-centered">
             <div class="content">
-                <span class="opensans-system">Made with HTML5, CSS, and &hearts;</span>
+                <span class="worksans-system">Made with HTML5, CSS, and &hearts;</span>
             </div>
             <div class="content">
-                <span class="opensans-system">&copy; 2018</span>
+                <span class="worksans-system">&copy; 2019</span>
             </div>
         </footer>
         <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="bower_components/scrollme/jquery.scrollme.min.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
