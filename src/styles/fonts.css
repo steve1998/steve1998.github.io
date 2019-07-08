@@ -1,0 +1,54 @@
+.montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.montserrat-extra-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.montserrat-thin {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.montserrat-extra-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.maven-pro-regular {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+
+.maven-pro-bold {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+}
+
+.maven-pro-black {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+}

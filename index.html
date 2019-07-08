@@ -6,173 +6,87 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nicholas Steven's Website</title>
+        <title>Nicholas Steven Darmawan's Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bulma CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,900" rel="stylesheet">
-
-        <!-- Icons -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/icons.css">
-        
-        <!-- Plugins -->
-        <link href="css/hamburger.css" rel="stylesheet">
-        <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
-
-        <!-- JQuery UI-->
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        
-        <!-- Custom CSS -->
-        <link href="css/index.css" rel="stylesheet">
-        <link href="css/fonts.css" rel="stylesheet">
-        <link href="css/color.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/styles/fonts.css">    
+        <link rel="stylesheet" href="src/styles/index.css">
+        <link rel="stylesheet" href="src/styles/footer.css">
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar bg is-fixed-top worksans-subtitle" id="nav">
-            <!-- 
-           <button id="burg" class="hamburger hamburger--slider js-hamburger" type="button" onclick="setActive(this)">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-               <span class="my-menu" id="mymenu">
-                    <span><a href="#home">Home</a></span>
-                    <span><a href="#about">About</a></span>
-                    <span><a href="#skills">Skills</a></span>
-                    <span><a href="#projects">Projects</a></span>
-                    <span><a href="#experiences">Experiences</a></span>
-               </span>
-            </button> -->
-            <div class="navbar-brand">
-                <div class="navbar-item">
-                    <a class="navbar-item worksans-nav has-text-white" href="#home">// NSD</a>
-                </div>
-            </div>
-            <div class="navbar-menu"></div>
-                <div class="navbar-end">
-                    <div class="navbar-item has-dropdown is-hoverable bg" id="dropdown">
-                        <a class="has-text-white navbar-link bg">
-                            Navigation
-                        </a>
-                        <div class="navbar-dropdown is-right">
-                            <a class="navbar-item" href="#about">
-                                About
-                            </a>    
-                            <a class="navbar-item" href="#skills">
-                                Skills
-                            </a>
-                            <a class="navbar-item" href="#projects">
-                                Projects
-                            </a>
-                            <a class="navbar-item" href="#experiences">
-                                Experiences
-                            </a>
+        <header class="montserrat-bold">
+            <!-- NavBar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-smoke-white">
+                <div class="container text-light-red">
+                    <a class="pacifico navbar-brand text-light-red" href="#">nsd</a>
+                    <button class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item pl-4" href="#about" style="color: inherit; text-decoration: none;">About</a>
+                            <a class="nav-item pl-4" href="#projects" style="color: inherit; text-decoration: none;">Projects</a> 
+                            <a class="nav-item pl-4" href="#portfolios" style="color: inherit; text-decoration: none;">Portfolio</a>
+                            <a class="nav-item pl-4" href="#contact" style="color: inherit; text-decoration: none;">Contact</a>
                         </div>
                     </div>
                 </div>
+            </nav>
+        </header>
+        <main id="content">
+            <!-- Hero -->
+            <div class="text-center p-7 bg-smoke-white" id="hero">
+                <div class="container text-light-red">
+                    <h1 class="montserrat-extra-bold" style="font-size: 4rem;">Hello there! My name is <span class="text-cool-black">Nicholas Steven Darmawan</span></h1>
+                    <hr style="background-color: #fc4445;">
+                    <span class="montserrat-regular subtitle">University of California, Davis, 2020</span>
+                    <br>
+                    <span class="montserrat-regular subtitle">Computer Science</span>
+                </div>
             </div>
-        </nav>
-        <!-- Upper Hero -->
-        <section id="home" class="hero bg is-fullheight has-text-centered">
-        <div class="hero-body">
+            <!-- Section 1 -->
+            <section class="text-left text-light-red p-6 bg-smoke-white" id="about">
+                <div class="container">
+                    <h1 class="montserrat-bold pb-2">Who am I?</h1>
+                    <p class="montserrat-regular">I am an Indonesian studying Computer Science here in UC Davis. I am a front-end developer. I also like to do photography, photomanipulation, videography and music production.</p>
+                    <button class="montserrat-bold btn btn-lg btn-light-red text-light-red"><a href="https://www.facebook.com/nicholassteven998" target="_blank" style="color: inherit; text-decoration: none;">Facebook</a></button>
+                    <button class="montserrat-bold btn btn-lg btn-light-red text-light-red ml-4"><a href="https://www.instagram.com/steve_9_5/" target="_blank" style="color: inherit; text-decoration: none;">Instagram</a></button>
+                    <button class="montserrat-bold btn btn-lg btn-light-red text-light-red ml-4"><a href="https://www.youtube.com/channel/UCrtOe43jGKnYMCX1vTc_H6w?view_as=subscriber" target="_blank" style="color: inherit; text-decoration: none;">YouTube</a></button>
+                </div>
+            </section>
+            <section class="text-right text-light-red p-6 bg-smoke-white" id="projects">
+                <div class="container">
+                    <h1 class="montserrat-bold pb-2">What I Have Done</h1>
+                    <p class="montserrat-regular">These are some highlights of what I have done.</p>
+                    <button class="montserrat-bold btn btn-lg btn-light-red text-light-red"><a href="https://github.com/steve1998" target="_blank" style="color: inherit; text-decoration: none;">My GitHub</a></button>
+                    <button class="montserrat-bold btn btn-lg btn-light-red text-light-red ml-4"><a href="https://github.com/steve1998" target="_blank" style="color: inherit; text-decoration: none;">Resume / CV</a></button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer bg-cool-black" id="contact">
             <div class="container">
-                <h1 class="major-mono white-text animated slideInDown typerwriter-h1">Hello there! My name is Nicholas Steven Darmawan 😁</h1>
-            </div>
-        </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section worksans-system scrollme">
-            <br>
-            <div class="container has-text-centered animateme">
-                <h1 class="worksans-supertitle">About me</h1>
-                <div class="columns">
-                    <div class="column">
-                        <p class="worksans-title">University of California, Davis</p>
-                        <p class="worksans-subtitle">Expected Graduation Date: 2020</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="montserrat-bold text-center text-smoke-white">
+                            <span class="montserrat-bold">Get in touch with me</p>
+                            <span class="montserrat-regular">nicholassteven998@gmail.com</span>
+                            <br>
+                            <span class="montserrat-regular">ndarmawan@ucdavis.edu</span>
+                        </div>
                     </div>
-                    <div class="column">
-                        <p class="worksans-title">Computer Science</p>
-                        <p class="worksans-subtitle">Major</p>
-                    </div>
+                    <div class="col-sm">
+                        <div class="montserrat-bold text-center text-smoke-white" style="padding-top: 2rem; padding-bottom: 2rem;">
+                            <span>Made with HTML5, CSS3 & &hearts;</span>
+                        </div>
+                    </div> 
                 </div>
-                <p>I am currently in my Junior year of college at UC Davis. I love coding and web develoment, and am learning how to make more awesome web pages. Kindly check out my GitHub page below. I also have other hobbies such as making music, and editing photos and videos.</p>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section worksans-system">
-            <br>
-            <div class="container has-text-centered">
-                <h1 class="worksans-supertitle">Skills</h1>
-                <div class="columns has-text-centered">
-                    <div class="column">
-                        <i class="icons8-html5-colored"></i>
-                    </div>
-                    <div class="column">
-                        <i class="icons8-css3-colored"></i>
-                    </div>
-                    <div class="column">
-                        <i class="icons8-javascript-filled"></i>
-                    </div>
-                    <div class="column">
-                        <i class="icons8-cpp-filled"></i>
-                    </div>
-                    <div class="column">
-                        <i class="icons8-python-filled"></i>
-                    </div>
-                    <div class="column">
-                        <i class="icons8-git-colored"></i>    
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Projects -->
-        <section id="projects" class="section worksans-system">
-            <div class="container has-text-centered">
-                <h1 class="worksans-supertitle">Projects</h1>
-                <div class="column">
-                    <a href="https://github.com/steve1998" target="_blank" rel="noreferrer noopener"><i class="icons8-github-colored"></i></a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Experiences -->
-        <section id="experiences" class="section worksans-system">
-            <div class="container has-text-centered">
-                <h1 class="worksans-supertitle">Experiences</h1>
-                <div class="column worksans-system-big">
-                    <p>IT support at College of Engineering at UC Davis</p>
-                    <p>Member of #include at UC Davis</p>
-                    <p>Participated in HackDavis 2018</p>
-                    <p>Member of the Davis Computer Science Club</p>
-                </div>
-            </div>
-        </section>
-        
-        <footer class="footer footer-padding has-text-centered">
-            <div class="content">
-                <span class="worksans-system">Made with HTML5, CSS, and &hearts;</span>
-            </div>
-            <div class="content">
-                <span class="worksans-system">&copy; 2019</span>
             </div>
         </footer>
-        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="bower_components/scrollme/jquery.scrollme.min.js"></script>
-        <script src="js/index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
