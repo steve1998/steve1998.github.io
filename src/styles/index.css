@@ -11739,11 +11739,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
-html, body {
+.wrapper {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .nav-item:hover {
