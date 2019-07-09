@@ -52,3 +52,33 @@
     font-family: 'Maven Pro', sans-serif;
     font-weight: 900;
 }
+
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.roboto-light {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.roboto-thin {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.roboto-black {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.roboto-medium {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}

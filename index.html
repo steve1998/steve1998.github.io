@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="src/styles/fonts.css">    
         <link rel="stylesheet" href="src/styles/index.css">
@@ -28,6 +29,7 @@
                     <div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item pl-4" href="#about" style="color: inherit; text-decoration: none;">About</a>
+                            <a class="nav-item pl-4" href="#about" style="color: inherit; text-decoration: none;">Experiences</a>
                             <a class="nav-item pl-4" href="#projects" style="color: inherit; text-decoration: none;">Projects</a> 
                             <a class="nav-item pl-4" href="#contact" style="color: inherit; text-decoration: none;">Contact</a>
                         </div>
@@ -36,21 +38,25 @@
             </nav>
         </header>
         <main id="content">
-            <!-- Hero -->
+            <!-- Main Intro -->
             <div class="text-center p-7 bg-smoke-white" id="hero">
                 <div class="container text-light-red">
-                    <h1 class="montserrat-extra-bold" style="font-size: 4rem;">Hello there! My name is <span class="text-cool-black">Nicholas Steven Darmawan</span></h1>
-                    <hr style="background-color: #fc4445;">
-                    <span class="montserrat-regular subtitle">University of California, Davis, 2020</span>
+                    <div class="row justify-content-center">
+                        <h1 class="pacifico" style="font-size: 6rem;">Hello there! My name is</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h1 class="pacifico text-cool-black" style="font-size: 6rem;">Nicholas Steven Darmawan</h1>
+                    </div>
+                    <!--<hr style="background-color: #fc4445;"> Design choice whether or not to put in a horizontal line -->
                     <br>
-                    <span class="montserrat-regular subtitle">Computer Science</span>
                 </div>
             </div>
+
             <!-- Section 1 -->
             <section class="text-left text-light-red p-6 bg-smoke-white" id="about">
                 <div class="container">
-                    <h1 class="montserrat-bold pb-2">Who am I?</h1>
-                    <p class="montserrat-regular">I am an Indonesian studying Computer Science here in UC Davis. I am a front-end developer. I also like to do photography, photomanipulation, videography and music production.</p>
+                    <h1 class="montserrat-bold pb-2" style="font-size: 4rem;">Who am I?</h1>
+                    <p class="montserrat-light" style="font-size: 2rem;">I am a front-end developer from Indonesia, but currently studying in the United States. I also like to do photography, photomanipulation, videography and music production.</p>
                     <div class="row justify-content-md-left">
                         <div class="col-md-auto mb-2">
                             <button class="montserrat-bold btn btn-lg btn-light-red text-light-red"><a href="https://www.facebook.com/nicholassteven998" target="_blank" style="color: inherit; text-decoration: none;">Facebook</a></button>
@@ -64,11 +70,55 @@
                     </div>
                 </div>
             </section>
-            <section class="text-right text-light-red p-6 bg-smoke-white" id="projects">
+            <section class="text-right text-light-red p-6 bg-smoke-white" id="education">
                 <div class="container">
-                    <h1 class="montserrat-bold pb-2">What I Have Done</h1>
-                    <p class="montserrat-regular">These are some highlights of what I have done.</p>
+                    <div class="row justify-content-end">
+                        <h1 class="montserrat-bold pb-2" style="font-size: 4rem; display:inline-block;">My Experiences</h1>
+                    </div>
+                    <span class="montserrat-light text-cool-black" style="font-size: 2rem;">Education</span>
                     <div class="row justify-content-md-end">
+                        <div class="col-md-auto">
+                            <span class="montserrat-medium" style="font-size: 2rem;">University of California, Davis</span>
+                        </div>
+                        <div class="col-md-auto">
+                            <span class="montserrat-light" style="font-size: 2rem;">2016-2020</span>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-end">
+                        <div class="col-md-auto">
+                            <span class="montserrat-medium" style="font-size: 2rem;">Computer Science, B.Sc.</span>
+                        </div>
+                        <div class="col-md-auto">
+                            <span class="montserrat-light" style="font-size: 2rem;">Major</span>
+                        </div>
+                    </div>
+                    <hr style="background-color: #fc4445;">
+                    <span class="montserrat-light text-cool-black" style="font-size: 2rem;">Work Experience</span>
+                    <div class="row justify-content-md-end">
+                        <div class="col-md-auto">
+                            <span class="montserrat-medium" style="font-size: 2rem;">College of Engineering IT Support</span>
+                        </div>
+                        <div class="col-md-auto">
+                            <span class="montserrat-light" style="font-size: 2rem;">2018-Present</span>
+                        </div>
+                    </div>
+                    <hr style="background-color: #fc4445;">
+                    <span class="montserrat-light text-cool-black" style="font-size: 2rem;">Clubs</span>
+                    <div class="row justify-content-md-end">
+                        <div class="col-md-auto">
+                            <span class="montserrat-medium" style="font-size: 2rem;">#include at UC Davis</span>
+                        </div>
+                        <div class="col-md-auto">
+                            <span class="montserrat-light" style="font-size: 2rem;">2018-Present</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-left text-light-red p-6 bg-smoke-white" id="projects">
+                <div class="container">
+                    <h1 class="montserrat-bold pb-2" style="font-size: 4rem;">What I Have Done</h1>
+                    <p class="montserrat-light" style="font-size: 2rem;">These are some highlights of what I have done.</p>
+                    <div class="row justify-content-md-start">
                         <div class="col-md-auto mb-2">
                             <button class="montserrat-bold btn btn-lg btn-light-red text-light-red"><a href="https://github.com/steve1998" target="_blank" style="color: inherit; text-decoration: none;">My GitHub</a></button>
                         </div>
