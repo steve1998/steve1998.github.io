@@ -9941,7 +9941,7 @@ a:hover {
   font-weight: 300;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 840px) {
   .footer {
     position: relative;
     margin-top: 24px;
