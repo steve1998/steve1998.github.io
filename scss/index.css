@@ -9889,9 +9889,12 @@ a:hover {
 }
 
 .navbar-brand {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   letter-spacing: 4px;
+}
+
+.navbar-brand:hover {
+  color: #707070;
 }
 
 .logo {
@@ -9904,7 +9907,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 120px;
+  min-height: 72px;
 }
 
 .container {
@@ -9941,7 +9944,7 @@ a:hover {
   font-weight: 300;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1000px) {
   .footer {
     position: relative;
     margin-top: 24px;
