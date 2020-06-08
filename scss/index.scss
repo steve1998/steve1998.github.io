@@ -2,6 +2,7 @@ $font-family-base: 'Open Sans', sans-serif;
 @import "../bootstrap/scss/bootstrap.scss";
 
 $font-family: 'Open Sans', sans-serif;
+$font-family-brand: 'Abril Fatface', cursive;
 $font-light: 300;
 $font-regular: 400;
 $font-semi-bold: 600;
@@ -11,12 +12,21 @@ $font-extra-bold: 800;
 // Colors
 $color-main: #707070;
 
+body {
+    animation: 1s ease-in 0s 1 slideInFromTop;
+    overflow-x: hidden;
+}
+
 a {
     color: inherit;
 }
 
 a:hover {
     color: $color-main;
+}
+
+.title {
+    font-size: 64px;
 }
 
 .navbar {
@@ -26,24 +36,30 @@ a:hover {
 
 .navbar-brand {
     margin-bottom: 10px;
-    letter-spacing: 4px;
 }
 
 .navbar-brand:hover {
     color: $color-main;
 }
 
+.logo:first-child {
+    margin-right: 0;
+}
+
 .logo {
-    width: 44px;
-    height: 44px;
-    margin-right: 20px;
+    margin-right: 5rem;
+}
+
+.logo:last-child {
+    margin-right: 0;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    min-height: 72px;
+    background-color: #f5f5f5;
+    padding: 2rem 0;
 }
 
 .container {
@@ -75,9 +91,25 @@ a:hover {
     font-weight: $font-extra-bold;
 }
 
+.abril-fatface {
+    font-family: $font-family-brand;
+    font-weight: $font-regular;
+}
+
 .btn {
     font-family: $font-family;
     font-weight: $font-light;
+}
+
+// Animations
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
