@@ -5,11 +5,11 @@ const handleWindowSize = () => {
     let jobDescription = document.getElementById("job-description")
 
     if(window.innerWidth <= 1000) {    
-        jobDescription.classList.remove("flex-row")
-        jobDescription.classList.add("flex-column")
+      jobDescription.classList.add("d-none")
+      jobDescription.classList.remove("d-flex")
     } else {
-        jobDescription.classList.remove("flex-column")
-        jobDescription.classList.add("flex-row")
+      jobDescription.classList.add("d-flex")
+      jobDescription.classList.remove("d-none")
     }
 
     return
