@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <!--Stylesheets-->
+    <link rel="stylesheet" href="scss/reset.css">
     <link rel="stylesheet" href="./scss/index.css">
     <title>Nicholas Steven's Website</title>
 </head>
 <body class="d-flex flex-column">
-    <nav class="navbar d-flex flex-column mt-4">
+    <nav id="nav" class="navbar sticky-top d-flex flex-column py-4">
         <div class="ml-4 col">
             <div class="navbar-brand">
-                <h1 class="title text-center text-wrap abril-fatface">NICHOLAS STEVEN DARMAWAN</h1>
+                <h1 id="brand" class="title text-wrap poppins-bold">Nicholas Steven Darmawan.</h1>
             </div>
         </div>
-        <div class="mx-auto col opensans-light">
-            <div id="job-description" class="navbar-nav d-flex flex-row">
-                <p class="col">Full Stack Developer</p>
-                <p class="col">Front End Developer</p>
-                <p class="col">iOS Developer</p>
-                <p class="col">Web Designer</p>
+        <div class="mx-auto col poppins-light">
+            <div id="job-description" class="navbar-nav d-flex flex-row poppins-semi-bold">
+                <p id="jd-1" class="col">Full Stack Developer</p>
+                <p id="jd-2" class="col">Front End Developer</p>
+                <p id="jd-3" class="col">iOS Developer</p>
+                <p id="jd-4" class="col">Web Designer</p>
             </div>
         </div>
     </nav>
@@ -30,16 +32,16 @@
         <div class="container-fluid">
             <div class="row mx-4 mb-2">
                 <div class="col">
-                    <h1>Projects</h1>
+                    <h1 class="subheading poppins-semi-bold">Projects</h1>
                 </div>
             </div>
             <div class="row mx-4">
-                <div class="col-md-12">
+                <div class="col-md-12 project">
                     <div class="d-flex flex-column">
                         <h5 class="card-title">Quantine (HackQuarantine)</h5>
                         <h6 class="card-subtitle text-muted mb-2">React Native - Express - MongoDB</h6>
                         <p class="card-text">An inventory management app built to help people sort their supplies during the COVID-19 crisis.</p>
-                        <a href="https://gitlab.com/clabe45/quantine">Repository</a>
+                        <button type="button" onclick="window.location.href='https://gitlab.com/clabe45/quantine';" class="btn col-md-1 rounded-0 btn-outline-primary">Repository</button>
                     </div>
                     <hr>
                 </div>
@@ -48,7 +50,8 @@
                         <h5 class="card-title">FOO</h5>
                         <h6 class="card-subtitle text-muted mb-2">Swift - Firebase</h6>
                         <p class="card-text">A recipe app that uses speech-to-text input to search for ingredients based on what a user has in their pantry.</p>
-                        <p href="#" class="text-muted">Repository is private</p>
+                        <button type="button" class="btn col-md-1 rounded-0 btn-outline-primary" disabled>Repository is private</button>
+                        <p href="#" class="text-muted"></p>
                     </div>
                     <hr>
                 </div>
@@ -57,7 +60,28 @@
                         <h5 class="card-title">TL:DR (HackDavis)</h5>
                         <h6 class="card-subtitle text-muted mb-2">HTML - CSS - JS - Node</h6>
                         <p class="card-text">A website that uses Google's Linguistics API to filter out important keywords to help people that need reading assistance.</p>
-                        <a href="https://github.com/steve1998/tldr">Repository</a>
+                        <button type="button" onclick="window.location.href='https://github.com/steve1998/tldr';" class="btn col-md-1 rounded-0 btn-outline-primary">Repository</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="d-flex flex-column">
+                        <h5 class="card-title">COVID-19 Tracker</h5>
+                        <h6 class="card-subtitle text-muted mb-2">React - Express</h6>
+                        <p class="card-text">A simple dashboard that tracks the number of global COVID-19 cases as well as cases per state in the United States.</p>
+                        <div class="d-flex flex-row">
+                            <button type="button" onclick="window.location.href='https://github.com/steve1998/covid19-tracker';" class="btn col-md-1 rounded-0 btn-outline-primary" style="margin-right: 1rem">Repository</button>
+                            <button type="button" onclick="window.location.href='https://covid19-dashboard-tracker.herokuapp.com';" class="btn col-md-1 rounded-0 btn-outline-primary">Live App</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="d-flex flex-column">
+                        <h5 class="card-title">Songs With Friends</h5>
+                        <h6 class="card-subtitle text-muted mb-2">React - Express</h6>
+                        <p class="card-text">A spotify group player that allows people to listen and chat together.</p>
+                        <button type="button" class="btn col-md-1 rounded-0 btn-outline-primary" disabled>Repository is private</button>
                     </div>
                     <hr>
                 </div>
