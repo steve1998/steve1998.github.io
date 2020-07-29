@@ -1,0 +1,115 @@
+$font-family-base: 'Open Sans', sans-serif;
+
+$theme-colors: (
+  "primary": #501B1D,
+  "accent": #9e363a
+);
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+$font-family: 'Open Sans', sans-serif;
+$font-family-brand: 'Abril Fatface', cursive;
+$font-family-alt: 'Poppins', sans-serif;
+$font-family-header: 'Roboto Mono', sans-serif;
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+
+// Class names
+$poppins: 'poppins';
+$opensans: 'opensans';
+
+// Colors
+$primary-color: #501B1D;
+$secondary-accent-color: #f0f7ff;
+$tertiary-accent-color: #0e2f54;
+$color-main: #707070;
+
+%subtitle {
+    color: white;
+    font-size: 72px;
+}
+
+%subtitle-alt {
+    color: black;
+    font-size: 72px;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-family;
+    font-weight: $font-light;
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    font-weight: $font-light;
+    font-size: 70px;
+}
+
+#image {
+    display: block;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+
+#profile {
+    background-color: $primary-color;
+    color: white;
+    padding: 4rem 10rem;
+}
+
+#projects {
+    padding: 4rem 10rem;
+}
+
+#footer {
+    background-color: #f5f5f5;
+}
+
+#nav {
+    margin: 1rem 2rem;
+    position: relative;
+}
+
+.subtitle-text {
+    @extend %subtitle;
+    font-size: 40px;
+    padding-left: .5rem;
+}
+
+.section-title {
+    @extend %subtitle;
+}
+
+.section-title-alt {
+    @extend %subtitle-alt;
+}
+
+.section-subtitle {
+    @extend %subtitle;
+    font-size: 60px;
+}
+
+@media(max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #image {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
