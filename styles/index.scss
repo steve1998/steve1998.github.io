@@ -10,7 +10,10 @@ $theme-colors: (
 $font-family: 'Open Sans', sans-serif;
 $font-family-brand: 'Abril Fatface', cursive;
 $font-family-alt: 'Poppins', sans-serif;
+$font-family-alt-2: 'Noto Sans JP', sans-serif;
+$font-family-brand-2: 'Playfair Display', serif;
 $font-family-header: 'Roboto Mono', sans-serif;
+$font-thin: 100;
 $font-light: 300;
 $font-regular: 400;
 $font-semibold: 600;
@@ -30,6 +33,7 @@ $color-main: #707070;
 %subtitle {
     color: white;
     font-size: 72px;
+    font-weight: $font-light;
 }
 
 %subtitle-alt {
@@ -44,15 +48,15 @@ html {
 }
 
 body {
-    font-family: $font-family;
-    font-weight: $font-light;
+    font-family: $font-family-alt-2;
+    font-weight: $font-thin;
     height: 100%;
     width: 100%;
 }
 
 #title {
-    font-weight: $font-light;
-    font-size: 70px;
+    font-weight: $font-bold;
+    font-size: 60px;
 }
 
 #image {
@@ -98,6 +102,16 @@ body {
 .section-subtitle {
     @extend %subtitle;
     font-size: 60px;
+}
+
+.site-title {
+    font-family: $font-family-brand-2;
+    font-weight: $font-bold;
+    opacity: 1;
+}
+
+.site-title:hover {
+    opacity: 0.7;
 }
 
 @media(max-width: 1200px) {
