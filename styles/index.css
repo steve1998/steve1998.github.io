@@ -10085,12 +10085,25 @@ body {
     overflow-x: hidden;
   }
 
-  #image {
-    display: none;
+  .container {
+    padding: 0 4em;
   }
 
-  .section-title {
-    font-size: 24px;
+  .brand h1 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .card {
+    margin-bottom: 4em;
+  }
+
+  #last-card {
+    margin-bottom: 1em;
+  }
+
+  .image {
+    display: none;
   }
 }
 
