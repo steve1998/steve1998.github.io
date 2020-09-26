@@ -10123,6 +10123,22 @@ body {
     font-size: 40px;
   }
 
+  .about {
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .text-body {
+    font-size: 18px;
+  }
+
+  .projects, .contact {
+    width: 100%;
+  }
+
   .card {
     margin-bottom: 4em;
   }
