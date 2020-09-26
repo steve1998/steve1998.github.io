@@ -59,6 +59,30 @@ body {
     font-size: 24px;
 }
 
+.about {
+    width: 30%;
+}
+
+.skills {
+    width: 20%;
+}
+
+.text-body {
+    font-size: 24px;
+}
+
+.projects, .contact {
+    width: 25%;
+}
+
+.subheading {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: .1em .25em;
+}
+
 .image {
     display: block;
     object-fit: cover;
