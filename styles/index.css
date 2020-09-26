@@ -10036,6 +10036,11 @@ body {
   width: 100%;
 }
 
+.skills-text {
+  font-weight: 600;
+  font-size: 24px;
+}
+
 .image {
   display: block;
   object-fit: cover;
