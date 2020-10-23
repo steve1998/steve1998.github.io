@@ -9,20 +9,20 @@ $theme-colors: (
 
 $font-family: 'Open Sans', sans-serif;
 $font-family-brand: 'Abril Fatface', cursive;
-$font-family-alt: 'Poppins', sans-serif;
+$poppins: 'Poppins', sans-serif;
 $font-family-alt-2: 'Noto Sans JP', sans-serif;
 $font-family-brand-2: 'Playfair Display', serif;
 $font-family-header: 'Roboto Mono', sans-serif;
+$josefin-sans: 'Josefin Sans', sans-serif;
+$fira-sans: 'Fira Sans', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
 $font-thin: 100;
 $font-light: 300;
 $font-regular: 400;
+$font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
 $font-extra-bold: 800;
-
-// Class names
-$poppins: 'poppins';
-$opensans: 'opensans';
 
 // Colors
 $primary-color: #501B1D;
@@ -48,7 +48,7 @@ html {
 }
 
 body {
-    font-family: $font-family-alt;
+    font-family: $poppins;
     font-weight: $font-regular;
     height: 100%;
     width: 100%;
@@ -78,8 +78,6 @@ body {
 .subheading {
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: flex-start;
     padding: .1em .25em;
 }
 

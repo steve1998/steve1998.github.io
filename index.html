@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <!--Stylesheets-->
         <link rel="stylesheet" href="./styles/reset.css">
@@ -25,7 +26,7 @@
         <![endif]-->
         <div class="title-bar"></div>
         <div class="container">
-            <div class="row h-100 py-4 brand">
+            <div class="row w-100 py-4 brand justify-content-between">
                 <div class="col align-self-center">
                     <span class="hello">Hello, </span>
                     <br>
@@ -36,149 +37,186 @@
                     <img class="image rounded-circle" src="assets/Grad_Pic_Edited.jpg">
                 </div>    
             </div>
-            <div class="d-flex flex-column row heading py-3">
-                <h3 class="subheading about">About Me</h3>
-                <span class="text-body pt-4">I am a recent graduate with a major in Computer Science from UC Davis.</span>
-                <span class="text-body">Currently looking for experience in the industry to further hone my software development and web development skills.</span>
+            <div class="row py-4 w-100">
+                <div class="col heading">
+                    <h3 class="subheading about mb-4">About Me</h3>
+                    <span class="text-body pt-4">I am a recent graduate with a major in Computer Science from UC Davis.</span>
+                    <span class="text-body">Currently looking for experience in the industry to further hone my software development and web development skills.</span>
+                </div>
             </div>
-            <div class="row py-3 heading">
+            <div class="row py-4 heading w-100">
+                <div class="col">
                     <h3 class="subheading skills">Skills</h3>
-                    <div class="pt-4 pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:react" data-inline="false"></span>
-                        <span class="ml-2">React</span>
+                    <div class="row justify-content-between pt-4 pb-2">
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                            <span class="ml-2">React</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="cib:redux" data-inline="false"></span>
+                            <span class="ml-2">Redux</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="cib:flask" data-inline="false"></span>
+                            <span class="ml-2">Flask</span>
+                        </div>
                     </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:redux" data-inline="false"></span>
-                        <span class="ml-2">Redux</span>
+                    <div class="row pb-2 justify-content-between">
+                        <div class="col-sm-12 col-md-4 pb-2 w-100 skills-text">
+                            <span class="iconify" data-icon="logos:express" data-inline="false"></span>
+                            <span class="ml-2">Express</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 pb-2 w-100 skills-text">
+                            <span class="iconify" data-icon="cib:javascript" data-inline="false"></span>
+                            <span class="ml-2">JavaScript</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 pb-2 w-100 skills-text">
+                            <span class="iconify" data-icon="cib:typescript" data-inline="false"></span>
+                            <span class="ml-2">TypeScript</span>
+                        </div>
                     </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:flask" data-inline="false"></span>
-                        <span class="ml-2">Flask</span>
+                    <div class="row pb-2 justify-content-between">
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="cib:python" data-inline="false"></span>
+                            <span class="ml-2">Python</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 w-100 skills-text">
+                            <span class="iconify" data-icon="cib:html5" data-inline="false"></span>
+                            <span class="ml-2">HTML5</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 w-100 skills-text">
+                            <span class="iconify" data-icon="cib:sass" data-inline="false"></span>
+                            <span class="ml-2">CSS3 / SASS</span>
+                        </div>
                     </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="logos:express" data-inline="false"></span>
-                        <span class="ml-2">Express</span>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="cib:git" data-inline="false"></span>
+                            <span class="ml-2">Git</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="file-icons:c" data-inline="false"></span>
+                            <span class="ml-2">C / C++</span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 skills-text">
+                            <span class="iconify" data-icon="cib:swift" data-inline="false"></span>
+                            <span class="ml-2">Swift</span>
+                        </div>
                     </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:javascript" data-inline="false"></span>
-                        <span class="ml-2">JavaScript</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:typescript" data-inline="false"></span>
-                        <span class="ml-2">TypeScript</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:python" data-inline="false"></span>
-                        <span class="ml-2">Python</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:html5" data-inline="false"></span>
-                        <span class="ml-2">HTML5</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:sass" data-inline="false"></span>
-                        <span class="ml-2">CSS3 / SASS</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:git" data-inline="false"></span>
-                        <span class="ml-2">Git</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="file-icons:c" data-inline="false"></span>
-                        <span class="ml-2">C / C++</span>
-                    </div>
-                    <div class="pb-2 w-100 skills-text">
-                        <span class="iconify" data-icon="cib:swift" data-inline="false"></span>
-                        <span class="ml-2">Swift</span>
-                    </div>
+                </div>
             </div>
-            <div class="heading py-3 w-100">
-                <div class="row">
+            <div class="row heading py-4 w-100">
+                <div class="col">
                     <h3 class="subheading projects">Projects</h3>
-                </div>
-                <div class="row py-4 justify-content-between">
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Songs With Friends</h5>
-                            <p class="card-text">A listening chatroom that plays songs in sync in the room and allows users to chat with each other.</p>
-                            <a href="#" class="btn btn-outline-primary rounded-0 disabled">Repository not available</a>
+                    <div class="row py-4 justify-content-between">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Songs With Friends</h5>
+                                    <p class="card-text">A listening chatroom that plays songs in sync in the room and allows users to chat with each other.</p>
+                                    <a href="#" class="btn btn-outline-primary rounded-0 disabled">Repository not available</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Bsic Text Editor</h5>
-                            <p class="card-text">A full-stack text editor which can create, save, and delete notes.</p>
-                            <a href="https://github.com/steve1998/text-editor" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bsic Text Editor</h5>
+                                    <p class="card-text">A full-stack text editor which can create, save, and delete notes.</p>
+                                    <a href="https://github.com/steve1998/text-editor" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="last-card" class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Foo</h5>
-                            <p class="card-text">A native mobile app that allows users to search for recipe using speech-to-text.</p>
-                            <a href="https://github.com/steve1998/text-editor" class="btn btn-outline-primary rounded-0 disabled">Repository not available</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-4 justify-content-between">
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Quantine</h5>
-                            <p class="card-text">A cross-platform inventory management app.</p>
-                            <a href="https://gitlab.com/clabe45/quantine" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">COVID-19 Tracker</h5>
-                            <p class="card-text">A dashboard to track COVID-19 global cases and cases in the United States.</p>
-                            <a href="https://github.com/steve1998/covid19-tracker" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">TL;DR</h5>
-                            <p class="card-text">A summarizer for students that need assistance using Google's NLP API.</p>
-                            <a href="https://github.com/steve1998/tldr" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-4 justify-content-between">
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Notaly</h5>
-                            <p class="card-text">A personal multiservice desktop app.</p>
-                            <div>
-                                <a href="https://github.com/steve1998/notaly" class="btn btn-outline-primary rounded-0 mr-3">Repository</a>
-                                <a href="https://notaly.herokuapp.com/" class="btn btn-outline-primary rounded-0">Download</a>
+                        <div class="col-sm-12 col-md-4">
+                            <div id="last-card" class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Foo</h5>
+                                    <p class="card-text">A native mobile app that allows users to search for recipe using speech-to-text.</p>
+                                    <a href="https://github.com/steve1998/text-editor" class="btn btn-outline-primary rounded-0 disabled">Repository not available</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem; height: 14rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Remember</h5>
-                            <p class="card-text">A chrome extension use to remember important links such as LinkedIn, GitHub, etc.</p>
-                            <div>
-                                <a href="https://github.com/steve1998/remember" class="btn btn-outline-primary rounded-0 mr-3">Repository</a>
+                    <div class="row py-4 justify-content-between">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Quantine</h5>
+                                    <p class="card-text">A cross-platform inventory management app.</p>
+                                    <a href="https://gitlab.com/clabe45/quantine" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">COVID-19 Tracker</h5>
+                                    <p class="card-text">A dashboard to track COVID-19 global cases and cases in the United States.</p>
+                                    <a href="https://github.com/steve1998/covid19-tracker" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">TL;DR</h5>
+                                    <p class="card-text">A summarizer for students that need assistance using Google's NLP API.</p>
+                                    <a href="https://github.com/steve1998/tldr" target="_blank" class="btn btn-outline-primary rounded-0">Repository</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div style="width: 18rem; height: 14rem;"></div>
+                    <div class="row py-4 justify-content-between">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notaly</h5>
+                                    <p class="card-text">A personal multiservice desktop app.</p>
+                                    <div>
+                                        <a href="https://github.com/steve1998/notaly" class="btn btn-outline-primary rounded-0 mr-3">Repository</a>
+                                        <a href="https://notaly.herokuapp.com/" class="btn btn-outline-primary rounded-0">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card" style="width: 18rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Remember</h5>
+                                    <p class="card-text">A chrome extension use to remember important links such as LinkedIn, GitHub, etc.</p>
+                                    <div>
+                                        <a href="https://github.com/steve1998/remember" class="btn btn-outline-primary rounded-0 mr-3">Repository</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="heading py-3 w-100">
-                <div class="row">
+            <div class="row heading py-4 w-100">
+                <div class="col">
                     <h3 class="contact subheading">Contact</h3>
-                </div>
-                <div class="row pt-3">
-                    <span class="text-body">Email me or follow me on:</span>
-                </div>
-                <div class="row py-4 justify-content-between">
-                    <button class="btn btn-outline-primary rounded-0 py-3 px-4"><ion-icon class="align-self-center pr-2" name="mail-outline"></ion-icon>Email</button>
-                    <button class="btn btn-outline-primary rounded-0 py-3 px-4"><ion-icon class="align-self-center pr-2" name="logo-github"></ion-icon>GitHub</button>
-                    <button class="btn btn-outline-primary rounded-0 py-3 px-4"><ion-icon class="align-self-center pr-2" name="logo-linkedin"></ion-icon>LinkedIn</button>
+                    <div class="row pt-3">
+                        <div class="col">
+                            <span class="text-body">Email me or follow me on:</span>
+                        </div>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-sm-12 col-md-4 pb-4">
+                            <button class="btn btn-outline-primary rounded-0 py-3 px-4"><ion-icon class="align-self-center pr-2" name="mail-outline"></ion-icon>Email</button>
+                        </div>
+                        <div class="col-sm-12 col-md-4 pb-4">
+                            <button class="btn btn-outline-primary rounded-0 py-3 px-4"><ion-icon class="align-self-center pr-2" name="logo-github"></ion-icon>GitHub</button>
+                        </div>
+                        <div class="col-sm-12 col-md-4 pb-4">
+                            <button class="btn btn-outline-primary rounded-0 py-3 px-4"><ion-icon class="align-self-center pr-2" name="logo-linkedin"></ion-icon>LinkedIn</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <footer class="footer d-flex pt-4 w-100 justify-content-center">
+            <footer class="footer row w-100 justify-content-center">
                 <span class="align-self-center">Made with HTML, Bootstrap, and &hearts;. &copy; 2020.</span>
             </footer>
         </div>

@@ -10060,8 +10060,6 @@ body {
 .subheading {
   background-color: black;
   color: white;
-  display: flex;
-  justify-content: flex-start;
   padding: 0.1em 0.25em;
 }
 
